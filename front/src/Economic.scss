@@ -1,0 +1,67 @@
+.economic {
+  min-height: 100vh;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url('./economic-bg.png') center/cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 100vh;
+    padding: 140px 100px 80px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 40px;
+  }
+
+  &__form {
+    font-size: 26px;
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 38px;
+    }
+
+    span {
+      width: 70%;
+    }
+
+    input {
+      width: 30%;
+      border: none;
+      background: none;
+      border-bottom: 1px solid black;
+      text-align: right;
+    }
+  }
+
+  &__legend {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    font-size: 26px;
+    padding: 9px 26px;
+    text-transform: uppercase;
+    border: 1px solid black;
+  }
+}
